@@ -1,7 +1,14 @@
-# Cloudflare Pages Configuration
 name = "decor-ai"
+main = "worker.js"
 compatibility_date = "2024-01-01"
+
+# For Cloudflare Pages
 pages_build_output_dir = "dist"
+
+# For Cloudflare Workers with Static Assets
+[assets]
+directory = "./dist"
+binding = "ASSETS"
 
 [vars]
 ENVIRONMENT = "production"
