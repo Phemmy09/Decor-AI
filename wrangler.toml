@@ -1,0 +1,11 @@
+# Cloudflare Pages Configuration
+name = "decor-ai-agent"
+compatibility_date = "2024-01-01"
+
+[site]
+bucket = "./dist"
+
+# Optional Cloudflare Worker / API bindings if extended
+[vars]
+ENVIRONMENT = "production"
+APP_NAME = "DecorAI - 24/7 Event Decor Concierge & CRM"
