@@ -2,9 +2,10 @@ name = "decor-ai"
 main = "worker.js"
 compatibility_date = "2024-01-01"
 
-# Static Assets Directory
+# Static Assets with Single Page Application routing
 [assets]
 directory = "./dist"
+not_found_handling = "single-page-application"
 
 [vars]
 ENVIRONMENT = "production"
